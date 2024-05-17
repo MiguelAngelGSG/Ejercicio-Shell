@@ -50,3 +50,20 @@ elif [ $firstNumber -gt $secondNumber ]; then
 else
     echo "$firstNumber es menor que $secondNumber"
 fi
+
+
+sleep 1
+
+
+#Ejercicio 3
+
+echo "Averiguemos si un numero es divisible por 2, elige un número: "
+read divisibleNumber
+
+
+#%2 calcula el numero restante al dividir tu número entre 2, entonces "-eq 0"compara el resultado a 0 para determinar si es par o impar
+if [ $((divisibleNumber%2)) -eq 0 ]; then
+    echo "$divisibleNumber es par"
+else
+    echo "$divisibleNumber es impar"
+fi
